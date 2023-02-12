@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    python
+{% endblock %}
+
+{% block body %}
+    {% if content %}
+        {{ content | safe }}
+    {% else %}
+        <h1> The Requested Page Not Found!</h1>
+    {% endif %}
+{% endblock %}
